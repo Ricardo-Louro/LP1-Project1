@@ -3,11 +3,10 @@ using System;
 namespace LP1_Project1
 {
         [Flags]
-    
         public enum LampState
         {
-            lamp1 = 0 << 0, // 0
-            lamp2 = 0 << 0, // 0
-            lamp3 = 0 << 0 // 0
+            Lamp1 = 1 << 0, // 1
+            Lamp2 = 1 << 1, // 2
+            Lamp3 = 1 << 2 // 4
         }
 }
