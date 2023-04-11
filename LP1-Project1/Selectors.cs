@@ -7,11 +7,11 @@ namespace LP1_Project1
 {
     public class Selectors
     {
-        public static int SelectButton()
+        public static int Button()
         {
             int option;
 
-            while (true)
+            while(true)
             {
                 Console.Write("Please select a button to press (1,2,3): ");
                 string s_option = Console.ReadLine();
