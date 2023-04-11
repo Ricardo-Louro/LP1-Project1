@@ -17,7 +17,7 @@ namespace LP1_Project1
             {
                 Console.WriteLine($"Conseguiste resolver o puzzle em {turn} turnos. Ganhaste :)");
             }
-            else if(turn > 6) // Verifica se ultrapassou o ultimo turno
+            else if(turn == 6) // Verifica se ultrapassou o ultimo turno
             {
                 Console.WriteLine($"Parece que já não tens mais turnos. Perdeste :(");
             }
