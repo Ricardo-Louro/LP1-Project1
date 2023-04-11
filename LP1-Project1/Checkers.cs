@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace LP1_Project1
 {
-    public class WinCondition
+    public class Checkers
     {
-        public static void Win(int turn, LampState lamps)
+        public static void WinCheck(int turn, LampState lamps)
         {
             if (
             (lamps & LampState.Lamp1) == LampState.Lamp1 &&    // Verifica se a lâmpada 1 está ligada

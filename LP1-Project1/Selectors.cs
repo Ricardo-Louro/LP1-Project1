@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LP1_Project1
 {
-    public class Methods
+    public class Selectors
     {
         public static int SelectButton()
         {
@@ -41,6 +41,6 @@ namespace LP1_Project1
             }
 
             return option;
-        }  
+        }
     }
 }
