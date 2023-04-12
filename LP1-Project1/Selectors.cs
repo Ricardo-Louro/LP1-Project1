@@ -16,11 +16,9 @@ namespace LP1_Project1
                 Console.Write("Please select a button to press (1,2,3): ");
                 string s_option = Console.ReadLine();
                 
-                try
-                {
-                    option = int.Parse(s_option);
-                }
-                catch
+                if(int.TryParse(s_option, out option))
+                {}
+                else
                 {
                     Console.WriteLine("Invalid Type!");
                     Console.WriteLine("Please try again!");
@@ -36,10 +34,9 @@ namespace LP1_Project1
                     continue;
                 }
 
-                Console.WriteLine("Option has been successfully declared!");
                 break;
             }
-
+            
             return option;
         }
     }
