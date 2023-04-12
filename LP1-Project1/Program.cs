@@ -4,18 +4,21 @@ namespace LP1_Project1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            bool win = false;
             LampState currentState = 0;          
 
-            for(int i = 1; i <= 6; i = i + 1)
+            for(int i = 1; i < 7; i++)
             {
                 currentState = Resolvers.Lamps(Selectors.Button(), currentState);
-                Console.WriteLine((currentState & LampState.Lamp1) == LampState.Lamp1);
-                Checkers.WinCheck(i, currentState);
-
+                win = Output.Lamps(currentState);
             }
 
+            if(!win)
+            {
+                Output.Lose();
+            }
         }
     }
 }
