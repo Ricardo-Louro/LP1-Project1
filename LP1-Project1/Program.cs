@@ -11,8 +11,15 @@ namespace LP1_Project1
 
             for(int i = 1; i < 7; i++)
             {
+                Console.WriteLine($"Turn {i}");
+
                 currentState = Resolvers.Lamps(Selectors.Button(), currentState);
                 win = Output.Lamps(currentState);
+
+                if(win)
+                {
+                    break;
+                }
             }
 
             if(!win)
