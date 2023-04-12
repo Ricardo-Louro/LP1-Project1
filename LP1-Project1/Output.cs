@@ -18,12 +18,12 @@ namespace LP1_Project1
             Console.WriteLine($"Lamp 1: {lamp1}");
             Console.WriteLine($"Lamp 2: {lamp2}");
             Console.WriteLine($"Lamp 3: {lamp3}");
+            Console.WriteLine();
 
             if(lamp1 && lamp2 && lamp3)
             {
                 win = Win();
             }
-
             return win;
         }
 
@@ -35,7 +35,8 @@ namespace LP1_Project1
 
         public static void Lose()
         {
-            Console.WriteLine("It seems you have lost! Better luck next time!");
+            Console.WriteLine("Turn limit reached!");
+            Console.WriteLine("Better luck next time!");
         }
     }
 }
