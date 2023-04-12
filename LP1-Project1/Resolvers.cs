@@ -15,7 +15,8 @@ namespace LP1_Project1
             }
             else if(Button == 2)
             {
-                if (((currentState & LampState.Lamp1) == LampState.Lamp1) ^ ((currentState & LampState.Lamp2) == LampState.Lamp2))
+                if (((currentState & LampState.Lamp1) == LampState.Lamp1) ^
+                ((currentState & LampState.Lamp2) == LampState.Lamp2))
                 {
                     currentState ^= LampState.Lamp1;
                     currentState ^= LampState.Lamp2;
@@ -23,7 +24,8 @@ namespace LP1_Project1
             }
             else if(Button == 3)
             {
-                if (((currentState & LampState.Lamp2) == LampState.Lamp2) ^ ((currentState & LampState.Lamp3) == LampState.Lamp3))
+                if (((currentState & LampState.Lamp2) == LampState.Lamp2) ^
+                ((currentState & LampState.Lamp3) == LampState.Lamp3))
                 {
                     currentState ^= LampState.Lamp2;
                     currentState ^= LampState.Lamp3;
