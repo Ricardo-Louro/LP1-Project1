@@ -9,12 +9,7 @@ namespace LP1_Project1
             bool win = false;
             LampState currentState = 0;
 
-            Console.WriteLine();
-            for (int i = 0; i < 3;i++)
-            {
-                Console.WriteLine($"Lamp {i + 1}: Off"); //vai imprimir que todas as lâmpadas estão desligadas
-            }
-            
+            Output.Lamps(currentState);
 
             for (int i = 1; i < 7; i++)
             {
