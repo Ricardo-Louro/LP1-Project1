@@ -15,10 +15,9 @@ namespace LP1_Project1
             bool lamp2 = (currentState & LampState.Lamp2) == LampState.Lamp2;
             bool lamp3 = (currentState & LampState.Lamp3) == LampState.Lamp3;
 
-            Console.WriteLine($"Lamp 1: {lamp1}");
-            Console.WriteLine($"Lamp 2: {lamp2}");
-            Console.WriteLine($"Lamp 3: {lamp3}");
-            Console.WriteLine();
+            Console.WriteLine($"\nLamp 1:" + (lamp1 == true ? "On" : "Off")); //se o estado da lâmpada for verdadeira, então mostra que está ligado, caso contrário mostra que está desligada
+            Console.WriteLine($"Lamp 2:" + (lamp2 == true ? "On" : "Off"));   //se o estado da lâmpada for verdadeira, então mostra que está ligado, caso contrário mostra que está desligada
+            Console.WriteLine($"Lamp 3:" + (lamp3 == true ? "On" : "Off"));   //se o estado da lâmpada for verdadeira, então mostra que está ligado, caso contrário mostra que está desligada
 
             if(lamp1 && lamp2 && lamp3)
             {
@@ -29,13 +28,13 @@ namespace LP1_Project1
 
         public static bool Win()
         {
-            Console.WriteLine("Congratulations! You have won!");
+            Console.WriteLine("\nCongratulations! You have won!");
             return true;
         }
 
         public static void Lose()
         {
-            Console.WriteLine("Turn limit reached!");
+            Console.WriteLine("\nTurn limit reached!");
             Console.WriteLine("Better luck next time!");
         }
     }

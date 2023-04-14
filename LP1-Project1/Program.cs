@@ -7,16 +7,23 @@ namespace LP1_Project1
         static void Main()
         {
             bool win = false;
-            LampState currentState = 0;          
+            LampState currentState = 0;
 
-            for(int i = 1; i < 7; i++)
+            Console.WriteLine();
+            for (int i = 0; i < 3;i++)
             {
-                Console.WriteLine($"Turn {i}");
+                Console.WriteLine($"Lamp {i + 1}: Off"); //vai imprimir que todas as lâmpadas estão desligadas
+            }
+            
+
+            for (int i = 1; i < 7; i++)
+            {
+                Console.WriteLine($"\nTurn {i}");
 
                 currentState = Resolvers.Lamps(Selectors.Button(), currentState);
                 win = Output.Lamps(currentState);
 
-                if(win)
+                if (win)
                 {
                     break;
                 }
