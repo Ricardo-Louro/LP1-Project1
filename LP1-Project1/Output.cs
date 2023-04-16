@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LP1_Project1
@@ -18,7 +19,7 @@ namespace LP1_Project1
         /// it can be used to check which lamps are on or off.</param>
         /// <returns>A bool used to know if the win condition has been
         /// reached</returns>
-        public static bool Lamps(LampState currentState)
+        public static bool Lamps(LampState currentState, int Turn)
         {
             //Initialize the bool used to check if the win condition
             //has been reached
@@ -31,10 +32,13 @@ namespace LP1_Project1
             //Declare a bool on whether Lamp3 is on
             bool lamp3 = (currentState & LampState.Lamp3) == LampState.Lamp3;
 
+            Thread.Sleep(1000);
             //Write the status of Lamp1
             Console.WriteLine($"\nLamp 1: " + (lamp1 == true ? "On" : "Off"));
+            Thread.Sleep(1000);
             //Write the status of Lamp2
             Console.WriteLine($"Lamp 2: " + (lamp2 == true ? "On" : "Off"));
+            Thread.Sleep(1000);
             //Write the status of Lamp3
             Console.WriteLine($"Lamp 3: " + (lamp3 == true ? "On" : "Off"));
             
@@ -42,7 +46,7 @@ namespace LP1_Project1
             if(lamp1 && lamp2 && lamp3)
             {
                 //...call method Win()
-                win = Win();
+                win = Win(Turn);
             }
             //Return the bool used to check if the win condition was reached
             return win;
@@ -53,10 +57,12 @@ namespace LP1_Project1
         /// </summary>
         /// <returns>A bool used to know if the win condition has been
         /// reached</returns>
-        public static bool Win()
+        public static bool Win(int Turn)
         {
             //Write win message
             Console.WriteLine("\nCongratulations! You have won!");
+            Console.WriteLine("You have completed the game within " +
+            $"{Turn} turns");
             //Return true
             return true;
         }
@@ -69,6 +75,31 @@ namespace LP1_Project1
             //Write loss message
             Console.WriteLine("\nTurn limit reached!");
             Console.WriteLine("Better luck next time!");
+        }
+
+        /// <summary>
+        /// Writes a tutorial to inform the player of the rules for the game
+        /// </summary>
+        public static void Tutorial()
+        {
+            Console.WriteLine("Welcome to the Game!");
+            Thread.Sleep(1000);
+            Console.WriteLine("You need to turn on all 3 lamps " +
+            "within 6 turns or you'll lose!");
+            Console.WriteLine("");
+            Thread.Sleep(2000);
+            Console.WriteLine("Pressing Button 1 will turn on the first lamp!");
+            Thread.Sleep(1000);
+            Console.WriteLine("Pressing Button 2 will cause the first and " +
+            "second lamps to switch states with each other!");
+            Thread.Sleep(1000);
+            Console.WriteLine("Pressing Button 3 will cause the second and " +
+            "third lamps to switch states with each other!");
+            Console.WriteLine("");
+            Thread.Sleep(1000);
+            Console.WriteLine("Best of luck!");
+            Console.Write("Press ENTER to proceed...");
+            Console.ReadLine();
         }
     }
 }
