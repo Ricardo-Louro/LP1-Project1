@@ -51,16 +51,27 @@
   - Verifica se o número escolhido é entre 1 a 3, se não pede-se ao jogador que mande uma nova resposta;
 
 **Output.cs:**
-- Inicializa a variável botão;
+- Mostra o que lhe é pedido;
+- Lâmpadas:
+  - O estado da lâmpada 1;
+  - O estado da lâmpada 2;
+  - O estado da lâmpada 3;
+- Condição de vitória;
+- Condição de derrota;
+- Indicação das regras do jogo;
 
 **Resolvers.cs:**
 - Pede qual botão foi escolhido:
-  - Se foi o 1 então ativa ou desliga o mesmo;
+  - Se foi o 1 então ativa ou desliga o mesmo; 
+  - Se foi o 2 então troca o estado entre a lâmpada 1 e 2;
+  - Se foi o 3 então troca o estado entre a lâmpada 2 e 3;
+  - Caso algo corra errado temos uma excepeção que mostra que ocorreu um erro;
+- No fim devolve o estado das lâmpadas;
 
 ---
 
 ### **Fluxograma:**
-Disponível [aqui](https://drive.google.com/file/d/1EjklRZWdeDIUliFZHjrzRFzKrjpI_uXx/view?usp=share_link)
+Disponível [aqui](https://drive.google.com/file/d/1UO_GjyvQmBTOtT--s0d7Wyf_AFg_wZjl/view?usp=share_link)
 
 ### **Referências:**
  - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
