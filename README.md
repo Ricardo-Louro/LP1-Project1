@@ -47,7 +47,13 @@
 
 **Output.cs:**
 - Inicializa a variável botão;
+
+**Resolvers.cs:**
+- Pede qual botão foi escolhido:
+  - Se foi o 1 então ativa ou desliga o mesmo; 
+
 ##### **Fluxograma:**
+https://drive.google.com/file/d/1EjklRZWdeDIUliFZHjrzRFzKrjpI_uXx/view?usp=share_link
 
 ##### **Referências:**
  - [W3Schools](https://www.w3schools.com/python/) para a consulta das diversas funções e funcionalidades de Python utilizadas durante este trabalho (ex: *Class*, *isinstance()*, etc...)
