@@ -32,16 +32,26 @@ namespace LP1_Project1
             //Declare a bool on whether Lamp3 is on
             bool lamp3 = (currentState & LampState.Lamp3) == LampState.Lamp3;
 
-            Thread.Sleep(1000);
+            //Wait for 0.5 seconds
+            Thread.Sleep(500);
             //Write the status of Lamp1
             Console.WriteLine($"\nLamp 1: " + (lamp1 == true ? "On" : "Off"));
-            Thread.Sleep(1000);
+            
+            //Wait for 0.5 seconds
+            Thread.Sleep(500);
             //Write the status of Lamp2
             Console.WriteLine($"Lamp 2: " + (lamp2 == true ? "On" : "Off"));
-            Thread.Sleep(1000);
+            
+            //Wait for 0.5 seconds
+            Thread.Sleep(500);
             //Write the status of Lamp3
             Console.WriteLine($"Lamp 3: " + (lamp3 == true ? "On" : "Off"));
-            
+
+            //Wait for the player's input before proceeding
+            Console.WriteLine();
+            Console.Write("Press ENTER to continue...");
+            Console.ReadLine();
+
             //If all lamps are on...
             if(lamp1 && lamp2 && lamp3)
             {
@@ -63,6 +73,12 @@ namespace LP1_Project1
             Console.WriteLine("\nCongratulations! You have won!");
             Console.WriteLine("You have completed the game within " +
             $"{Turn} turns");
+
+            //Wait for player's input before proceeding
+            Console.WriteLine();
+            Console.Write("Press ENTER to continue...");
+            Console.ReadLine();
+            
             //Return true
             return true;
         }
@@ -75,6 +91,11 @@ namespace LP1_Project1
             //Write loss message
             Console.WriteLine("\nTurn limit reached!");
             Console.WriteLine("Better luck next time!");
+
+            //Wait for player's input before proceeding
+            Console.WriteLine();
+            Console.Write("Press ENTER to continue...");
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -82,6 +103,7 @@ namespace LP1_Project1
         /// </summary>
         public static void Tutorial()
         {
+            //Write the tutorial with pauses for readability
             Console.WriteLine("Welcome to the Game!");
             Thread.Sleep(1000);
             Console.WriteLine("You need to turn on all 3 lamps " +
@@ -98,8 +120,11 @@ namespace LP1_Project1
             Console.WriteLine("");
             Thread.Sleep(1000);
             Console.WriteLine("Best of luck!");
+
+            //Wait for player's input before proceeding
             Console.Write("Press ENTER to proceed...");
             Console.ReadLine();
+            Console.Clear();
         }
     }
 }

@@ -28,12 +28,16 @@ namespace LP1_Project1
             //Initialize a for loop that covers the number of allowed turns
             for (int turn = 1; turn < 7; turn++)
             {
+                //Clear the console of previous messages
+                Console.Clear();
+
                 //Write which turn we're on
                 Console.WriteLine($"\nTurn {turn}");
 
                 //Allow the player to press a button and switch the state of
                 //the lamps accordingly
                 currentState = Resolvers.Lamps(Selectors.Button(), currentState);
+                
                 //Write the status of the lamps and assign the value true
                 //to the bool if the win condition has been met
                 win = Output.Lamps(currentState, turn);
@@ -44,9 +48,8 @@ namespace LP1_Project1
                     //Break the loop
                     break;
                 }
-
-                Thread.Sleep(1000);
             }
+
             //Once the loop has been broken
             //If the win condition has not been met
             if(!win)
