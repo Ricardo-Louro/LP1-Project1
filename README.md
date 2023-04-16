@@ -55,11 +55,13 @@
 
 **Resolvers.cs:**
 - Pede qual botão foi escolhido:
-  - Se foi o 1 então ativa ou desliga o mesmo; 
+  - Se foi o 1 então ativa ou desliga o mesmo;
 
-##### **Fluxograma:**
+---
+
+### **Fluxograma:**
 Disponível [aqui](https://drive.google.com/file/d/1EjklRZWdeDIUliFZHjrzRFzKrjpI_uXx/view?usp=share_link)
 
-##### **Referências:**
+### **Referências:**
  - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
  - [Stack Overflow](https://stackoverflow.com/)
