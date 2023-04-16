@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace LP1_Project1
 {
@@ -18,21 +19,24 @@ namespace LP1_Project1
             //Initialize the state of the lamps as 0 (all off)
             LampState currentState = 0;
 
+            //Write the tutorial
+            Output.Tutorial();
+
             //Write the state of all lamps
-            Output.Lamps(currentState);
+            Output.Lamps(currentState, 0);
 
             //Initialize a for loop that covers the number of allowed turns
-            for (int i = 1; i < 7; i++)
+            for (int turn = 1; turn < 7; turn++)
             {
                 //Write which turn we're on
-                Console.WriteLine($"\nTurn {i}");
+                Console.WriteLine($"\nTurn {turn}");
 
                 //Allow the player to press a button and switch the state of
                 //the lamps accordingly
                 currentState = Resolvers.Lamps(Selectors.Button(), currentState);
                 //Write the status of the lamps and assign the value true
                 //to the bool if the win condition has been met
-                win = Output.Lamps(currentState);
+                win = Output.Lamps(currentState, turn);
 
                 //If the win condition has been met
                 if (win)
@@ -40,6 +44,8 @@ namespace LP1_Project1
                     //Break the loop
                     break;
                 }
+
+                Thread.Sleep(1000);
             }
             //Once the loop has been broken
             //If the win condition has not been met
