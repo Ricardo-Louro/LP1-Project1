@@ -5,7 +5,8 @@
 | Nome | Número |
 | - | - |
 | Ricardo de Almeida | 21807601 |
-| Paulo Silva | 22206205 | 
+| Paulo Silva | 22206205 |
+
 **Ricardo Almeida:**
  - Criou os ficheiros
  - Adicionou os métodos de pedir informação ao utilizador e interação com as lâmpadas
@@ -53,11 +54,8 @@
   - Se foi o 1 então ativa ou desliga o mesmo; 
 
 ##### **Fluxograma:**
-https://drive.google.com/file/d/1EjklRZWdeDIUliFZHjrzRFzKrjpI_uXx/view?usp=share_link
+Disponível [aqui](https://drive.google.com/file/d/1EjklRZWdeDIUliFZHjrzRFzKrjpI_uXx/view?usp=share_link)
 
 ##### **Referências:**
- - [W3Schools](https://www.w3schools.com/python/) para a consulta das diversas funções e funcionalidades de Python utilizadas durante este trabalho (ex: *Class*, *isinstance()*, etc...)
- 
- - [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/) para a consulta de referências para problemas que não tinha encontrado previamente.
- 
- - [Docs.Python](https://docs.python.org/) para a consulta de diversas funções e funcionalidades de Python de forma mais aprofundada e específica do que W3Schools., utilizado maioritariamente para perceber o *defaultdict()* e a biblioteca *os*.
+ - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
+ - [Stack Overflow](https://stackoverflow.com/)
