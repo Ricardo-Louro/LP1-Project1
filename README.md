@@ -29,7 +29,7 @@
 ### **Arquitetura da Solução:**
 **Program.cs:**
 - Define-se uma variável de vitória;
-- Vai-se buscar os valores das lâmpadas e definimos uma nova varável com essa informação;
+- Vai-se buscar os valores das lâmpadas e definimos uma nova variável com essa informação;
 - Mostramos que as lâmpadas estão todas desligadas;
 - Começa o loop do jogo:
   - Mostramos o turno em que o jogador se encontra;
