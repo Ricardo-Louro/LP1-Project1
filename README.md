@@ -20,7 +20,10 @@
  - Adicionou enumeração
  - Deixou o jogo mais legível ao utilizador
 ---
+
 **Repositório Git:** [GitHub](https://github.com/Ricardo-Louro/LP1-Project1)
+
+---
 
 ### **Arquitetura da Solução:**
 **Program.cs:**
