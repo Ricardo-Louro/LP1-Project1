@@ -19,6 +19,7 @@
  - Criou o loop do jogo
  - Adicionou enumeração
  - Deixou o jogo mais legível ao utilizador
+ - Fez o ficheiro Markdown
 ---
 
 **Repositório Git:** [GitHub](https://github.com/Ricardo-Louro/LP1-Project1)
