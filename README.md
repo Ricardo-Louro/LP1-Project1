@@ -1,6 +1,6 @@
 # **LP1-Project1**
 ---
-##### **Autoria:** 
+### **Autoria:** 
 
 | Nome | Número |
 | - | - |
@@ -22,7 +22,7 @@
 ---
 **Repositório Git:** [GitHub](https://github.com/Ricardo-Louro/LP1-Project1)
 
-#### **Arquitetura da Solução:**
+### **Arquitetura da Solução:**
 **Program.cs:**
 - Define-se uma variável de vitória;
 - Vai-se buscar os valores das lâmpadas e definimos uma nova varável com essa informação;
