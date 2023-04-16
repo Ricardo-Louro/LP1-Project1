@@ -13,6 +13,7 @@
  - Criou Flags
  - Melhorou código para ser mais legível, compacto e eficiente
  - Adicionou comentários
+  
 **Paulo Silva:**
  - Criou a condição de vitória
  - Criou o loop do jogo
